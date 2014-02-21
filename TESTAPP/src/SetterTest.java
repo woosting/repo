@@ -2,9 +2,12 @@ public class SetterTest
 {
     private String name;
 
-    public void main(String[] args) {
-        this.setName("John Doe");
-        System.out.println(this.getName());
+    public SetterTest() {
+    	this.name = "John Doe"; 
+    }
+ 
+    public SetterTest(String Name) {
+    	this.name = Name; 
     }
 
     public String getName()
