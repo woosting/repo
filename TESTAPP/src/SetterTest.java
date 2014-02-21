@@ -1,19 +1,19 @@
-public class SetterTest
-{
+public class SetterTest {
     private String name;
 
-    public void main(String[] args) {
-        this.setName("John Doe");
-        System.out.println(this.getName());
+    public SetterTest() {
+        this.setName("Jane Doe");
     }
 
-    public String getName()
-    {
+    public SetterTest(String name) {
+        this.setName(name);
+    }
+
+    public String getName() {
         return this.name;
     }
 
-    public void setName(String name)
-    {
+    public void setName(String name) {
         this.name = name;
     }
 }
