@@ -1,22 +1,19 @@
-public class SetterTest
-{
+public class SetterTest {
     private String name;
 
     public SetterTest() {
-    	this.name = "John Doe"; 
-    }
- 
-    public SetterTest(String Name) {
-    	this.name = Name; 
+        this.setName("Jane Doe");
     }
 
-    public String getName()
-    {
+    public SetterTest(String name) {
+        this.setName(name);
+    }
+
+    public String getName() {
         return this.name;
     }
 
-    public void setName(String name)
-    {
+    public void setName(String name) {
         this.name = name;
     }
 }
