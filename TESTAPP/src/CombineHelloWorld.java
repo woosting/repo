@@ -1,14 +1,18 @@
 public class CombineHelloWorld {
 	public static void main(String[] args) {
-		System.out.println(PrintHello.main() + ", " + PrintWorld.main() + "!");
+	
+		SetterTest contact = new SetterTest();  
+		contact.setName("John Doe");
+	    System.out.println(PrintHello.main() + ", " + PrintWorld.main() + "! " + contact.getName());
 		
-		SetterTest x = new SetterTest();
-		System.out.println(x.getName());
+        contact = new SetterTest();              
+		System.out.println(PrintHello.main() + ", " + PrintWorld.main() + "! " + contact.getName());
+       
 		
-		SetterTest y = new SetterTest("Henk");
-		System.out.println(y.getName());
-		
-		y.setName("Oh nee toch piet");
-		System.out.println(y.getName());
+		SetterTest contact2 = new SetterTest("blaat");   
+		System.out.println(PrintHello.main() + ", " + PrintWorld.main() + "! " + contact2.getName());
+	
+
+        
 	}
 }
