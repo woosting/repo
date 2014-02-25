@@ -1,8 +1,8 @@
 package chapter_01;
 public class BeerSong {
 	public static void main(String[] args) {
-		int beerNum = 10;
-		String word = "flerkederk";
+		int beerNum = 3;
+		String word = "bottles";
 		
 		while (beerNum > 0) {
 			if (beerNum == 1) {
