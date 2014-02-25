@@ -1,8 +1,9 @@
 package chapter_01;
 public class BeerSong {
 	public static void main(String[] args) {
-		int beerNum = 3;
-		String word = "bottles";
+		int beerNum = 10;
+		String word = "flerkederk";
+		
 		while (beerNum > 0) {
 			if (beerNum == 1) {
 				word = "bottle"; // singular, as in ONE bottle.
@@ -23,6 +24,7 @@ public class BeerSong {
 			} else {
 				System.out.println("No more bottles of beer on the wall");
 			} // end else
+			
 		} // end while loop
 	} // end main method
 } // end class
