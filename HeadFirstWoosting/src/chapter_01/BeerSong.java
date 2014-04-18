@@ -1,6 +1,9 @@
 package chapter_01;
 public class BeerSong {
 	public static void main(String[] args) {
+		StringBuilder songBuilder = new StringBuilder();
+		singBeerSong(songBuilder, 3);
+		System.out.println(songBuilder);
 	}
 
 	public static void singBeerSong(StringBuilder songBuilder, int numberOfBottles) {
