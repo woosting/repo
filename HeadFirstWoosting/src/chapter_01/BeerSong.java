@@ -1,10 +1,12 @@
 package chapter_01;
 public class BeerSong {
 	public static void main(String[] args) {
-		singBeerSong(3);
+		StringBuilder songBuilder = new StringBuilder();
+		singBeerSong(songBuilder, 3);
+		System.out.println(songBuilder);
 	}
 
-	public static void singBeerSong(int numberOfBottles) {
+	public static void singBeerSong(StringBuilder songBuilder, int numberOfBottles) {
 		int beerNum = numberOfBottles;
 		String word = "bottles";
 		
@@ -12,10 +14,10 @@ public class BeerSong {
 			if (beerNum == 1) {
 				word = "bottle"; // singular, as in ONE bottle.
 			}
-			System.out.println(beerNum + " " + word + " of beer on the wall");
-			System.out.println(beerNum + " " + word + " of beer.");
-			System.out.println("Take one down.");
-			System.out.println("Pass it around.");
+			songBuilder.append(beerNum + " " + word + " of beer on the wall\n");
+			songBuilder.append(beerNum + " " + word + " of beer.\n");
+			songBuilder.append("Take one down.\n");
+			songBuilder.append("Pass it around.\n");
 			beerNum = beerNum - 1;
 			if (beerNum > 0) {
 				
@@ -23,10 +25,10 @@ public class BeerSong {
 					word = "bottle"; // singular, as in ONE bottle.		// Plural fix
 				} 														// Plural fix - END
 				
-				System.out.println(beerNum + " " + word
-						+ " of beer on the wall");
+				songBuilder.append(beerNum + " " + word
+						+ " of beer on the wall\n");
 			} else {
-				System.out.println("No more bottles of beer on the wall");
+				songBuilder.append("No more bottles of beer on the wall\n");
 			}
 		}
 	}
