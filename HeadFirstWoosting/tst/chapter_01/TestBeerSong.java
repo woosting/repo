@@ -27,6 +27,17 @@ public class TestBeerSong {
 		assertEquals(expectedSong, getBeerSong(-1));
 	}
 
+	@Test
+	public void testWallWithOneBeer() {
+		String expectedSong =
+				"1 bottle of beer on the wall\n" +
+				"1 bottle of beer.\n" +
+				"Take one down.\n" +
+				"Pass it around.\n" +
+				"No more bottles of beer on the wall\n";
+		assertEquals(expectedSong, getBeerSong(1));		
+	}
+
 	private String getBeerSong(int numberOfBottles) {
 		StringBuilder songBuilder = new StringBuilder();
 		BeerSong.singBeerSong(songBuilder, numberOfBottles);
