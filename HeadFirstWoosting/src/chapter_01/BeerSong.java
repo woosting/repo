@@ -27,9 +27,8 @@ public class BeerSong {
 				
 				songBuilder.append(beerNum + " " + word
 						+ " of beer on the wall\n");
-			} else {
-				songBuilder.append("No more bottles of beer on the wall\n");
 			}
 		}
+		songBuilder.append("No more bottles of beer on the wall\n");
 	}
 }
