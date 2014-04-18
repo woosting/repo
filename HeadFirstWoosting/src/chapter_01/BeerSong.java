@@ -1,7 +1,11 @@
 package chapter_01;
 public class BeerSong {
 	public static void main(String[] args) {
-		int beerNum = 3;
+		singBeerSong(3);
+	}
+
+	public static void singBeerSong(int numberOfBottles) {
+		int beerNum = numberOfBottles;
 		String word = "bottles";
 		
 		while (beerNum > 0) {
