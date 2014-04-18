@@ -8,12 +8,9 @@ public class TestBeerSong {
 
 	@Test
 	public void testEmptyWallOfBeer() {
-		StringBuilder songBuilder = new StringBuilder();
-		BeerSong.singBeerSong(songBuilder, 0);
-		
 		String expectedSong =
 				"No more bottles of beer on the wall\n";
-		assertEquals(expectedSong, songBuilder.toString());
+		assertEquals(expectedSong, getBeerSong(0));
 	}
 
 	/**
@@ -25,11 +22,16 @@ public class TestBeerSong {
 	 */
 	@Test
 	public void testWallWithNegativeBeers() {
-		StringBuilder songBuilder = new StringBuilder();
-		BeerSong.singBeerSong(songBuilder, -1);
-		
 		String expectedSong =
 				"No more bottles of beer on the wall\n";
-		assertEquals(expectedSong, songBuilder.toString());
+		assertEquals(expectedSong, getBeerSong(-1));
+	}
+
+	private String getBeerSong(int numberOfBottles) {
+		StringBuilder songBuilder = new StringBuilder();
+		BeerSong.singBeerSong(songBuilder, numberOfBottles);
+
+		String song = songBuilder.toString();
+		return song;
 	}
 }
