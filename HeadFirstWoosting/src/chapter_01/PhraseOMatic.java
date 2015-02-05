@@ -30,6 +30,6 @@ public class PhraseOMatic {
 				+ wordListThree[rand3];
 		// print out the phrase
 		System.out.println("What we need is a " + phrase);
-		System.out.println("test random gen: " + randt);
+		// System.out.println("test random gen: " + randt);
 	}
 }
