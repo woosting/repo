@@ -23,7 +23,7 @@ public class PhraseOMatic {
 		int rand1 = (int) (Math.random() * oneLength);
 		int rand2 = (int) (Math.random() * twoLength);
 		int rand3 = (int) (Math.random() * threeLength);
-		double randt = Math.random();
+		// double randt = Math.random();
 		
 		// now build a phrase
 		String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " "
