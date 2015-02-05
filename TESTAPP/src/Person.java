@@ -1,11 +1,11 @@
-public class SetterTest {
+public class Person {
     private String name;
 
-    public SetterTest() {
-        this.setName("Jane Doe");
+    public Person() {
+        this.setName("John Doe");
     }
 
-    public SetterTest(String name) {
+    public Person(String name) {
         this.setName(name);
     }
 
