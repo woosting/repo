@@ -2,7 +2,7 @@ package chapter_01;
 public class BeerSong {
 	public static void main(String[] args) {
 		StringBuilder songBuilder = new StringBuilder();
-		singBeerSong(songBuilder, 3);
+		singBeerSong(songBuilder, 10);
 		System.out.println(songBuilder);
 	}
 
@@ -14,7 +14,7 @@ public class BeerSong {
 			if (beerNum == 1) {
 				word = "bottle"; // singular, as in ONE bottle.
 			}
-			songBuilder.append(beerNum + " " + word + " of beer on the wall\n");
+			songBuilder.append(beerNum + " " + word + " of beer on the wall.\n");
 			songBuilder.append(beerNum + " " + word + " of beer.\n");
 			songBuilder.append("Take one down.\n");
 			songBuilder.append("Pass it around.\n");
@@ -26,9 +26,17 @@ public class BeerSong {
 				} 														// Plural fix - END
 				
 				songBuilder.append(beerNum + " " + word
-						+ " of beer on the wall\n");
+						+ " of beer on the wall!\n");
 			}
 		}
-		songBuilder.append("No more bottles of beer on the wall\n");
+		songBuilder.append("No more bottles of beer on the wall!\n");
+		if (beerNum < 0) {
+			
+//TODO: make absolute!
+			if (beerNum == -1) {
+				word = "bottle"; // singular, as in ONE bottle.
+			}
+			songBuilder.append("(B.t.w. you owe me " + beerNum + " " + word + " to put on the wall...)\n");
+		}
 	}
 }
